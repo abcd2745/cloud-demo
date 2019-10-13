@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:springboot_demo;MODE=MYSQL;DB_CLOSE_DELAY=-1
+      username: root
+      password:
+      driver-class-name: org.h2.Driver
+      maximum-pool-size: 15
+      pool-name: unit-test-db
+    platform: h2
+    #启动时需要初始化的建表语句
+    schema: classpath:config/database/schema-mysql.sql
+    #初始化的数据
+    data: classpath:config/database/data-mysql.sql
+    # Initialize the datasource with available DDL and DML scripts.
+    initialization-mode: always
+  h2:
+    console:
+      enabled: true
+
+pagehelper:
+  helperDialect: mysql
+
+test: word
