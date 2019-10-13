@@ -22,6 +22,11 @@ public class DemoControllerTest {
     @Autowired
     private MockMvc mvc;
 
+    /**
+     * 请求urlTemplate  必须以"/"开始
+     *
+     * @throws Exception
+     */
     @Test
     public void demo() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/demo.json").accept(MediaType.APPLICATION_JSON))

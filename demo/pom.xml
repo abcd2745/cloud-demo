@@ -77,6 +77,12 @@
             <artifactId>rider-spring</artifactId>
             <version>${database-rider.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.jackson</groupId>
+                    <artifactId>jackson-mapper-lgpl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- 分页 -->

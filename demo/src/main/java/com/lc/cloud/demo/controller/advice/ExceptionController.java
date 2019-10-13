@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import javax.validation.ConstraintViolationException;
+
 @RestControllerAdvice
 public class ExceptionController {
 
@@ -14,6 +16,15 @@ public class ExceptionController {
     public BaseRspDto CustomExceptionHandler(CustomException ex) {
         BaseRspDto baseRspDto = new BaseRspDto();
         baseRspDto.setCode(ex.getCode());
+        baseRspDto.setErrMsg(ex.getMessage());
+        return baseRspDto;
+    }
+
+    @ResponseBody
+    @ExceptionHandler(value = ConstraintViolationException.class)
+    public BaseRspDto CustomExceptionHandler(ConstraintViolationException ex) {
+        BaseRspDto baseRspDto = new BaseRspDto();
+        baseRspDto.setCode("-1");
         baseRspDto.setErrMsg(ex.getMessage());
         return baseRspDto;
     }
