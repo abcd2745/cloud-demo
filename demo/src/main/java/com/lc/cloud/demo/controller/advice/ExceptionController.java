@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import javax.validation.ConstraintViolationException;
 import java.util.List;
 
+/**
+ * 统一异常处理
+ */
 @RestControllerAdvice
 public class ExceptionController {
 
@@ -61,7 +64,8 @@ public class ExceptionController {
                     .append(")value:(")
                     .append(fieldError.getRejectedValue())
                     .append(")验证失败:(")
-                    .append(fieldError.getDefaultMessage());
+                    .append(fieldError.getDefaultMessage())
+                    .append(")]");
         }
         baseRspDto.setErrMsg(builder.toString());
         return baseRspDto;

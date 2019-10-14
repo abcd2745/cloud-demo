@@ -1,4 +1,4 @@
-package com.lc.cloud.demo.controller;
+package com.lc.cloud.demo.controller.demo;
 
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
@@ -22,7 +22,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class DemoControllerIT {
+public class DemoControllerRandomPort {
 
     @LocalServerPort
     private int port;

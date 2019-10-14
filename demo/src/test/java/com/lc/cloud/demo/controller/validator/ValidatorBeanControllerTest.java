@@ -1,4 +1,4 @@
-package com.lc.cloud.demo.controller;
+package com.lc.cloud.demo.controller.validator;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -120,6 +120,47 @@ public class ValidatorBeanControllerTest {
                                 }
                         );
                         Assert.assertThat("-1", is(rspDto.getCode()));
+                    }
+                })
+                .andDo(print());
+    }
+
+    @Test
+    public void validBean3() throws Exception {
+        ValidatorReqDto reqDto = new ValidatorReqDto();
+        //ip
+        reqDto.setPattern("10.1.4.610");
+        //18~70
+        reqDto.setAge(30);
+        reqDto.setBirthday(new Date(1571022571880L));
+        reqDto.setEmail("abcd2745@sohu.com");
+        reqDto.setExpire(new Date(1581022571880L));
+        reqDto.setFlag(true);
+        reqDto.setList(Arrays.asList(1, 2, 3));
+        reqDto.setName("lican");
+        reqDto.setPass("123");
+        reqDto.setUrl("https://www.baidu.com");
+        /*5 ~ 10*/
+        reqDto.setRange(6);
+        /* > 10*/
+        reqDto.setSalary(11);
+
+        mvc.perform(MockMvcRequestBuilders.post("/validBeanBindingResult.json")
+                .accept(MediaType.APPLICATION_JSON)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(reqDto)))
+                .andExpect(status().isOk())
+                .andDo(new ResultHandler() {
+
+                    @Override
+                    public void handle(MvcResult mvcResult) throws Exception {
+                        BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                                new TypeReference<BaseRspDto<ValidatorRspDto>>() {
+                                }
+                        );
+                        Assert.assertThat("1", is(rspDto.getCode()));
+                        ValidatorRspDto validator = rspDto.getData();
+                        Assert.assertThat(validator.getName(),containsString("pattern"));
                     }
                 })
                 .andDo(print());

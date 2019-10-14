@@ -1,4 +1,4 @@
-package com.lc.cloud.demo.controller;
+package com.lc.cloud.demo.controller.validator;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
