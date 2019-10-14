@@ -35,6 +35,12 @@ public class ValidatorController {
         return name;
     }
 
+    /**
+     * 这里对要验证的对象需要加上@Validated，否则验证不会生效
+     *
+     * @param dto
+     * @return
+     */
     @PostMapping("validBean.json")
     public BaseRspDto<ValidatorRspDto> validBean(@RequestBody @Validated ValidatorReqDto dto) {
         BaseRspDto<ValidatorRspDto> rsp = BaseRspDto.success();

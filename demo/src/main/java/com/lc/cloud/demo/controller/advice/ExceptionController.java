@@ -2,12 +2,15 @@ package com.lc.cloud.demo.controller.advice;
 
 import com.lc.cloud.demo.exception.CustomException;
 import com.lc.cloud.demo.repository.dto.BaseRspDto;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.validation.ConstraintViolationException;
+import java.util.List;
 
 @RestControllerAdvice
 public class ExceptionController {
@@ -22,7 +25,7 @@ public class ExceptionController {
     }
 
     /**
-     * 单项验证
+     * 单项验证，是Hibernate (或者 Spring Data JPA) 的验证注解抛出的异常信息
      *
      * @param ex
      * @return
@@ -47,7 +50,20 @@ public class ExceptionController {
     public BaseRspDto CustomExceptionHandler(MethodArgumentNotValidException ex) {
         BaseRspDto baseRspDto = new BaseRspDto();
         baseRspDto.setCode("-1");
-        baseRspDto.setErrMsg(ex.getMessage());
+
+        BindingResult br = ex.getBindingResult();
+        List<FieldError> fieldErrorList = br.getFieldErrors();
+
+        StringBuilder builder = new StringBuilder();
+        for (FieldError fieldError : fieldErrorList) {
+            builder.append("[field:(")
+                    .append(fieldError.getField())
+                    .append(")value:(")
+                    .append(fieldError.getRejectedValue())
+                    .append(")验证失败:(")
+                    .append(fieldError.getDefaultMessage());
+        }
+        baseRspDto.setErrMsg(builder.toString());
         return baseRspDto;
     }
 
