@@ -45,16 +45,22 @@ public class ValidatorReqDto {
     @AssertTrue
     private Boolean flag;
 
+    /**
+     * 必须是已过的时间
+     */
     @Past
     private Date birthday;
 
+    /**
+     * 未来时间
+     */
     @Future
     private Date expire;
 
     @URL(message = "url 格式不对")
     private String url;
 
-    @Pattern(regexp = "[^((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})(\\.((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})){3}$]", flags = Pattern.Flag.CASE_INSENSITIVE)
+    @Pattern(regexp = "((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})(\\.((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})){3}", flags = Pattern.Flag.CASE_INSENSITIVE)
     public String pattern;
 
     /**
