@@ -33,5 +33,4 @@ public class DemoControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("demo")));
     }
-
 }

@@ -13,6 +13,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 
 
@@ -54,22 +55,15 @@ public class GroupValidatorControllerTest extends SuperControllerTest {
 
     /**
      * controller 指定了分组 MyGroup
-     * [field:(name)value:(1234567890)验证失败:(名字length在3-9位)]
-     * [field:(name)value:(1234567890)验证失败:(名字size在2-6位)]
-     * [field:(pass)value:(1234)验证失败:(pass 长度不为3)]
+     * MyGroup extends Default  会把未
      *
      * @throws Exception
      */
     @Test
     public void groupValidator2() throws Exception {
-
         GroupValidatorReqDto reqDto = new GroupValidatorReqDto();
         reqDto.setName("1234567890");
         reqDto.setPass("1234");
-
-        final Map<String, Integer> errorFieldMap = new HashMap<>(4);
-        errorFieldMap.put("name", 2);
-        errorFieldMap.put("pass", 1);
 
         mockMvc.perform(MockMvcRequestBuilders.post("/groupValidator.json")
                 .accept(MediaType.APPLICATION_JSON)
@@ -79,18 +73,54 @@ public class GroupValidatorControllerTest extends SuperControllerTest {
                 .andDo(new ResultHandler() {
                     @Override
                     public void handle(MvcResult mvcResult) throws Exception {
-                        BaseRspDto<List<FieldError>> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<List<FieldError>>>() {
+
+                        BaseRspDto<Map<String, Integer>> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                                new TypeReference<BaseRspDto<Map<String, Integer>>>() {
                                 }
                         );
                         Assert.assertThat("1", is(rspDto.getCode()));
-                        List<FieldError> fieldErrorList = rspDto.getData();
-                        Assert.assertNotNull(fieldErrorList);
-                        Assert.assertThat(3, is(fieldErrorList.size()));
+                        Assert.assertNotNull(rspDto.getData());
+                        Map<String, Integer> map = rspDto.getData();
 
-                        for (FieldError fieldError : fieldErrorList) {
-                            Assert.assertTrue(errorFieldMap.containsKey(fieldError.getField()));
-                        }
+                        Assert.assertThat(2, is(map.get("name")));
+                        Assert.assertThat(1, is(map.get("pass")));
+                    }
+                })
+                .andDo(print());
+    }
+
+    /**
+     * 分组 MyGroupNoExtendsDefault 没有继承 Default
+     * 那么在字段上的验证（未指定分组的验证） 是不会生效的
+     *
+     * @throws Exception
+     */
+    @Test
+    public void groupNoExtendsDefaultValidator() throws Exception {
+
+        GroupValidatorReqDto reqDto = new GroupValidatorReqDto();
+        reqDto.setName("1234567890");
+        reqDto.setPass("1234");
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/groupNoExtendsDefaultValidator.json")
+                .accept(MediaType.APPLICATION_JSON)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(reqDto)))
+                .andExpect(status().isOk())
+                .andDo(new ResultHandler() {
+                    @Override
+                    public void handle(MvcResult mvcResult) throws Exception {
+
+                        BaseRspDto<Map<String, Integer>> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                                new TypeReference<BaseRspDto<Map<String, Integer>>>() {
+                                }
+                        );
+                        Assert.assertThat("1", is(rspDto.getCode()));
+                        Assert.assertNotNull(rspDto.getData());
+                        Map<String, Integer> map = rspDto.getData();
+
+                        Assert.assertThat(1, is(map.get("name")));
+                        Assert.assertThat(1, is(map.get("pass")));
                     }
                 })
                 .andDo(print());
