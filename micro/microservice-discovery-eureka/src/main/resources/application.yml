@@ -1,0 +1,10 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost # 主机名，会在控制页面中显示
+  client:
+    register-with-eureka: false #通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

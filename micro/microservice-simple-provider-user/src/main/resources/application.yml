@@ -1,0 +1,37 @@
+server:
+  port: 8000
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: h2
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+  application:
+    name: microservice-simple-provider-user #服务名
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # * 在yaml 文件属于关键字
+  endpoint:
+    beans:
+      enabled: true
+#eureka主机名，会在控制页面中显示
+eureka:
+  instance:
+    hostname: localhost
+    status-page-url: http://${eureka.instance.hostname}:${server.port} #eureka服务器页面中status的请求路径
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #eureka注册中心服务器地址
