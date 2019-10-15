@@ -20,10 +20,11 @@ import static org.mockito.Mockito.when;
 @SpringBootTest
 public class MockPageDemoServiceTest {
 
+    //可以是interface、class,只是只运行是不进入具体的类中
     @Mock
     private PageMapper pageMapper;
 
-    @InjectMocks
+    @InjectMocks // 只能只对类，运行时能进入类中，对指定的方法放回Mockito的值 可以使用@MockBean注解代替
     private PageDemoService pageDemoService;
 
     @Test
