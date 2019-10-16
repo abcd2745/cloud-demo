@@ -48,6 +48,12 @@
 
     <dependencyManagement>
         <dependencies>
+            <!--
+            spring-cloud-dependencies也是一个依赖管理器的pom文件，
+            与spring-boot-starter-parent的作用一样，
+            不同的是spring-cloud-dependencies是对cloud的依赖管理。
+            如：spring-cloud-starter-config、spring-cloud-starter-netflix-eureka-server
+            -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
