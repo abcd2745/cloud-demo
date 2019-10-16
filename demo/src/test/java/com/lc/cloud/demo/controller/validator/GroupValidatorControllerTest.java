@@ -1,21 +1,16 @@
 package com.lc.cloud.demo.controller.validator;
 
-import java.util.HashMap;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.lc.cloud.demo.controller.SuperControllerTest;
 import com.lc.cloud.demo.repository.dto.BaseRspDto;
 import com.lc.cloud.demo.repository.dto.valid.GroupValidatorReqDto;
-import com.lc.cloud.demo.repository.dto.valid.ValidatorRspDto;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultHandler;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
-
 
 import java.util.Collections;
 import java.util.List;
@@ -23,10 +18,16 @@ import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 public class GroupValidatorControllerTest extends SuperControllerTest {
 
+    /**
+     * 这个是正确数据
+     *
+     * @throws Exception
+     */
     @Test
     public void groupValidator() throws Exception {
 
@@ -39,17 +40,7 @@ public class GroupValidatorControllerTest extends SuperControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(reqDto)))
                 .andExpect(status().isOk())
-                .andDo(new ResultHandler() {
-                    @Override
-                    public void handle(MvcResult mvcResult) throws Exception {
-                        BaseRspDto<List<FieldError>> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<List<FieldError>>>() {
-                                }
-                        );
-                        Assert.assertThat("1", is(rspDto.getCode()));
-                        Assert.assertThat(Collections.emptyList(), is(rspDto.getData()));
-                    }
-                })
+                .andExpect(content().json("{\"data\":{},\"code\":\"1\",\"errMsg\":null}"))
                 .andDo(print());
     }
 

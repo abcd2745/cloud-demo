@@ -44,6 +44,14 @@ public class DemoController {
         return BaseRspDto.success();
     }
 
+    /**
+     * PageInfo 会带有分页信息，包含中页数
+     *
+     * @param styleId
+     * @param page
+     * @param size
+     * @return
+     */
     @GetMapping("pageInfo/{styleId}.json")
     public BaseRspDto<PageInfo<String>> pageInfo(@PathVariable("styleId") String styleId,
                                                  @RequestParam("page") int page,
@@ -53,6 +61,14 @@ public class DemoController {
         return success;
     }
 
+    /**
+     * Page 只返回分页中的查询结果
+     *
+     * @param styleId
+     * @param page
+     * @param size
+     * @return
+     */
     @GetMapping("page/{styleId}.json")
     public BaseRspDto<Page<String>> page(@PathVariable("styleId") String styleId,
                                          @RequestParam("page") int page,

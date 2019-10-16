@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
@@ -32,7 +33,9 @@ public class MockPageDemoServiceTest {
         List<String> skuList = new ArrayList<>();
         skuList.add("F001");
         // 设置模拟对象的返回预期值
-        when(pageMapper.findSku("F")).thenReturn(skuList);
+//        when(pageMapper.findSku("F")).thenReturn(skuList);
+
+        given(pageMapper.findSku("F")).willReturn(skuList);
 
         PageInfo<String> pageInfo = pageDemoService.findDemoList(1, 1, "F");
 

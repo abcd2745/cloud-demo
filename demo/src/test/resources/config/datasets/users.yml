@@ -1,0 +1,5 @@
+USER:
+  - USERNAME: "dbunit"
+    LOGINDATE: "2019-10-10"
+  - USERNAME: "springboot"
+    LOGINDATE: "2019-10-20"

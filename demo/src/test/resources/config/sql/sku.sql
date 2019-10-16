@@ -1,0 +1,1 @@
+INSERT INTO `hw_master_sku`(`SKUID`, `StyleID`, `ColorID`, `SizeID`, `ModifyDate`, `IsDelete`, `Price`, `SalePrice`) VALUES ('1104110', '11', '04', '110', '2017-09-16 01:24:57.000000', 0, 79.90, 79.90);
