@@ -71,6 +71,12 @@
             <artifactId>rider-core</artifactId>
             <version>${database-rider.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.codehaus.jackson</groupId>
+                    <artifactId>jackson-mapper-lgpl</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.github.database-rider</groupId>

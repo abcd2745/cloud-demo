@@ -29,7 +29,7 @@ public class DbTest {
     private MasterMapper masterMapper;
 
     @Test
-    //会在当前datasource下执行脚本，事务回滚后数据删除
+    //在当前datasource下执行脚本，事务回滚后数据删除
     //‘/’开头表示从classpath根目录开始搜索，没有以此开头默认在测试类所在包下。也可使用classpath:、file:、http: 开头
 //    @Sql("/config/sql/sku.sql")
     @Sql("classpath:config/sql/sku.sql")
