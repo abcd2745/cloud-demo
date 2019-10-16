@@ -1,4 +1,4 @@
-package com.lc.example.micro.microservicesimpleconsumermovie.entity;
+package com.lc.example.micro.consumer.entity;
 
 import lombok.Data;
 

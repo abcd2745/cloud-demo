@@ -1,6 +1,6 @@
-package com.lc.example.micro.microservicesimpleconsumermovie.controller;
+package com.lc.example.micro.consumer.controller;
 
-import com.lc.example.micro.microservicesimpleconsumermovie.entity.User;
+import com.lc.example.micro.consumer.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +16,8 @@ public class MovieController {
     /**
      * 调用远程接口
      * 服务提供者注册到eureka，注册的实例名称：microservice-simple-provider-user
+     * 服务消费者通过 实例名 调用接口
+     *
      * @param id
      * @return
      */
