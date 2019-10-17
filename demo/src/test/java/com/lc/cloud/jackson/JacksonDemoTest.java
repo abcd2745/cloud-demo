@@ -17,6 +17,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -26,12 +27,18 @@ import java.io.IOException;
 @RunWith(JUnit4.class)
 public class JacksonDemoTest {
 
+    private static ObjectMapper objectMapper;
+
+    @BeforeClass
+    public static void setUpClass() throws IOException {
+        objectMapper = new ObjectMapper();
+    }
+
     /**
      * Jackson 树遍历
      */
     @Test
     public void test() throws IOException {
-        ObjectMapper objectMapper = new ObjectMapper();
         String json = "{\"userName\":\"lican\",\"password\":\"123\"}";
         JsonNode jsonNode = objectMapper.readTree(json);
 
@@ -40,8 +47,20 @@ public class JacksonDemoTest {
     }
 
     @Test
+    public void test2() throws IOException {
+        Product product = buildProduct();
+        //id 未参与序列化，设置为null就不会显示在json中
+        product.setId(null);
+        String json = objectMapper.writeValueAsString(product);
+        //简单的对象序列化使用 readValue(json,JavaType),复杂的使用new TypeReference<NEED> @see test3
+        Product expected = objectMapper.readValue(json, Product.class);
+        //assertEquals 用的是 比较地址，这里用toString，比较值
+        Assert.assertEquals(product.toString(), expected.toString());
+
+    }
+
+    @Test
     public void test3() throws IOException {
-        ObjectMapper objectMapper = new ObjectMapper();
         List<Product> products = productList(5);
         //序列化
         String json = objectMapper.writeValueAsString(products);
@@ -142,6 +161,7 @@ public class JacksonDemoTest {
         private Map<String, Goods> goodsMap;
 
         private List<Goods> goodsList;
+
     }
 
     @Data
