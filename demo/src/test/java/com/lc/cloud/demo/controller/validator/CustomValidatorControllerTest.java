@@ -55,10 +55,9 @@ public class CustomValidatorControllerTest {
                     public void handle(MvcResult mvcResult) throws Exception {
                         ObjectMapper objectMapper = new ObjectMapper();
                         BaseRspDto<String> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<ValidatorRspDto>>() {
+                                new TypeReference<BaseRspDto<String>>() {
                                 }
                         );
-                        Assert.assertThat("-1", is(rspDto.getCode()));
                         //这串是提示信息
                         Assert.assertThat(rspDto.getErrMsg(), containsString("这个是自定义异常，必须包含字符串lican,并且长度不能大于8"));
                     }
