@@ -48,6 +48,7 @@ public class OkHttpUtil {
                 .readTimeout(60, TimeUnit.SECONDS)
                 //写超时
                 .writeTimeout(60, TimeUnit.SECONDS)
+
                 .build();
     }
 
