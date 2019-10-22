@@ -51,19 +51,15 @@ public class ValidatorControllerTest {
         mvc.perform(MockMvcRequestBuilders.get("/valid/1234567.json").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andDo(print())
-                .andDo(new ResultHandler() {
-                    @Override
-                    public void handle(MvcResult mvcResult) throws Exception {
-                        ObjectMapper objectMapper = new ObjectMapper();
-                        BaseRspDto<String> error = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<String>>() {
-                                }
-                        );
-                        Assert.assertThat("-1", is(error.getCode()));
-                        Assert.assertThat(error.getErrMsg(), containsString("长度必须3到6之间"));
-                    }
+                .andDo(mvcResult -> {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    BaseRspDto<String> error = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                            new TypeReference<BaseRspDto<String>>() {
+                            }
+                    );
+                    Assert.assertThat("-1", is(error.getCode()));
+                    Assert.assertThat(error.getErrMsg(), containsString("长度必须3到6之间"));
                 });
-
     }
 
     @Test

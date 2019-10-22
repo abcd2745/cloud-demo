@@ -86,6 +86,7 @@
         <!-- Kafka appender ignoreExceptions 必须设置为false，否则无法触发Failover -->
         <Kafka name="kafkaLog" topic="topic_request_log" ignoreExceptions="false">
             <PatternLayout pattern="[%-4level]_|_%d{YYYY-MM-dd HH:mm:ss}_|_%m_|_${sys:ip}"/>
+            <!-- 定义kafka的连接 KafkaAppender 类 -->
             <Property name="bootstrap.servers">bigdata001.dns.org:9092,bigdata002.dns.org:9092</Property>
             <Property name="max.block.ms">2000</Property>
         </Kafka>
