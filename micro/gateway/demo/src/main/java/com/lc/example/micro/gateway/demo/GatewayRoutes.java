@@ -16,4 +16,28 @@ public class GatewayRoutes {
                         .uri("http://localhost:8090/demo.json"))
                 .build();
     }
+
+    /**
+     *  @Bean
+     *     public RouteLocator routeLocator(RouteLocatorBuilder builder) {
+     *        return builder.routes()
+     *         .route(p -> p
+     *             .predicate(exchange -> exchange.getRequest().getPath().subPath(0).toString().startsWith(("/openhome/")))
+     *             .filters(f -> f.filter((exchange, chain) -> {
+     *                 ServerHttpRequest req = exchange.getRequest();
+     *                 addOriginalRequestUrl(exchange, req.getURI());
+     *                 String path = req.getURI().getRawPath();
+     *                 String newPath = path.replaceAll("/openhome/(?<remaining>.*)", "/${remaining}");
+     *                 ServerHttpRequest request = req.mutate()
+     *                         .path(newPath)
+     *                         .build();
+     *
+     *                 exchange.getAttributes().put(GATEWAY_REQUEST_URL_ATTR, request.getURI());
+     *
+     *                 return chain.filter(exchange.mutate().request(request).build());
+     *             }))
+     *             .uri("https://openhome.cc"))
+     *         .build();
+     *     }
+     */
 }
