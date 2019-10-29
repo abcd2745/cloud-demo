@@ -1,0 +1,8 @@
+my2:
+    age: 12
+    greeting: hi,i'm ${my.name}
+    name: forezp
+    number: ${random.int}
+    uuid: ${random.uuid}
+    max: ${random.int(10)}
+    value: ${random.value}
