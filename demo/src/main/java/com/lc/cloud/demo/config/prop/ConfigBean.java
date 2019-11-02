@@ -1,4 +1,4 @@
-package com.lc.cloud.demo.config;
+package com.lc.cloud.demo.config.prop;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

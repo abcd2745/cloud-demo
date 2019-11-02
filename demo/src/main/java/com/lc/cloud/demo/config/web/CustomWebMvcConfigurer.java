@@ -1,5 +1,7 @@
-package com.lc.cloud.demo.config;
+package com.lc.cloud.demo.config.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.format.datetime.DateFormatter;
 import org.springframework.stereotype.Component;
@@ -7,15 +9,19 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.servlet.config.annotation.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static com.lc.cloud.demo.constant.Constant.TIME_FORMAT;
 
 /**
- *
+ * 不用开启 @EnableWebMvc
  */
 @Component
 public class CustomWebMvcConfigurer implements WebMvcConfigurer {
+
+    @Autowired
+    private Environment environment;
 
     /**
      * 添加静态资源文件，外部可以直接访问地址
@@ -26,8 +32,11 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //需要配置1：----------- 需要告知系统，这是要被当成静态文件的！
         //第一个方法设置访问路径前缀，第二个方法设置资源路径
-        registry.addResourceHandler("/static/**")
-                .addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+
+        //添加对上传文件的直接访问
+//        String uploadFilePath = environment.getProperty("upload-file-path");
+//        registry.addResourceHandler("/upload/**").addResourceLocations("file:" + uploadFilePath);
     }
 
     /**
@@ -48,7 +57,14 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer {
      */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+//        //编码拦截器
+//        registry.addInterceptor(encodingInterceptor()).addPathPatterns("/**").excludePathPatterns("/upload/**", "/static/**");
+//        //安全验证拦截器
+//        registry.addInterceptor(permissionInterceptorAdapter()).addPathPatterns("/**").excludePathPatterns("/upload/**", "/static/**");
+//        //web拦截器
+//        registry.addInterceptor(webInterceptor()).addPathPatterns("/**").excludePathPatterns("/upload/**", "/static/**");
 
+        registry.addInterceptor(new LoginRequiredInterceptor()).excludePathPatterns(Arrays.asList("/static/**", "/templates/**"));
     }
 
     /**

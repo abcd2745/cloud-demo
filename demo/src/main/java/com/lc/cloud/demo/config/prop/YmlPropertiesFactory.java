@@ -1,4 +1,4 @@
-package com.lc.cloud.demo.config;
+package com.lc.cloud.demo.config.prop;
 
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.core.env.PropertiesPropertySource;

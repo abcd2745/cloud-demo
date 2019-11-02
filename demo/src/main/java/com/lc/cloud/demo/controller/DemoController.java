@@ -106,4 +106,14 @@ public class DemoController {
         Instant instant = datetime.atZone(zone).toInstant();
         return Date.from(instant);
     }
+
+    @GetMapping("/noJson")
+    public String noJson() {
+        return "没有.json后缀的请求，测试ServletRegistrationBean是否成功。";
+    }
+
+    @GetMapping("/noJson.json")
+    public String hasJson() {
+        return "有.json后缀的请求，测试ServletRegistrationBean是否成功。";
+    }
 }
