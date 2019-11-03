@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.format.FormatterRegistry;
 import org.springframework.format.datetime.DateFormatter;
+import org.springframework.http.CacheControl;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
@@ -11,6 +12,7 @@ import org.springframework.web.servlet.config.annotation.*;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static com.lc.cloud.demo.constant.Constant.TIME_FORMAT;
 
@@ -25,14 +27,20 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer {
 
     /**
      * 添加静态资源文件，外部可以直接访问地址
+     * https://blog.csdn.net/andy_zhang2007/article/details/89133798
+     * https://www.cnblogs.com/hujunzheng/p/9682960.html
      *
      * @param registry
      */
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //需要配置1：----------- 需要告知系统，这是要被当成静态文件的！
-        //第一个方法设置访问路径前缀，第二个方法设置资源路径
-        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+        //设置访问路径前缀
+        registry.addResourceHandler("/static/**")
+                //设置资源路径
+                .addResourceLocations("classpath:/static/")
+                //设置资源缓存时间
+                .setCacheControl(CacheControl.maxAge(1, TimeUnit.HOURS).cachePublic());
 
         //添加对上传文件的直接访问
 //        String uploadFilePath = environment.getProperty("upload-file-path");

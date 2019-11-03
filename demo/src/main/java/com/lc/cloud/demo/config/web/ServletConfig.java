@@ -12,6 +12,7 @@ public class ServletConfig {
      * 相当于 ServletMapper -- url-pattern 设置
      * 只接受.html 和 .json 的请求
      * 注意不拦截静态资源
+     * https://www.cnblogs.com/canger/p/6084846.html
      *
      * @param dispatcherServlet
      * @return
