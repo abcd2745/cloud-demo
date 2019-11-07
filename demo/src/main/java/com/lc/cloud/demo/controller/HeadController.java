@@ -10,11 +10,21 @@ import java.util.Map;
 @RestController
 public class HeadController {
 
+    /**
+     * http2.0  head大小写不敏感，必须指定head中field为小写
+     *
+     * @param head
+     * @param id
+     * @param user
+     * @param request
+     * @param response
+     * @return
+     */
     @PostMapping("head/{id}.json")
     public String head(@RequestHeader Map<String, String> head, @PathVariable int id, @RequestBody User user, HttpServletRequest request, HttpServletResponse response) {
-        response.setHeader("storeId", "11002054");
-        if (head.containsKey("storeId")) {
-            return head.get("storeId");
+        response.setHeader("storeid", "11002054");
+        if (head.containsKey("storeid")) {
+            return head.get("storeid");
         }
         return user.getUserName();
     }
