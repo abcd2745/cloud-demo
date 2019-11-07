@@ -1,4 +1,4 @@
-package com.lc.cloud.java8.ch05;
+package com.lc.java8.ch05;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
