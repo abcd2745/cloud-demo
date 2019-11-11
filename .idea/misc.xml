@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/pom.xml" />
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/pom.xml" />
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/hustrix/pom.xml" />
       </list>
     </option>
   </component>
