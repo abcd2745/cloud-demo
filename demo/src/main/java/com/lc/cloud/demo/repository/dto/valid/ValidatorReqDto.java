@@ -18,10 +18,13 @@ public class ValidatorReqDto {
      * 字符串，集合，map限制大小
      */
     @NotEmpty(message = "名字不能为空")
+    @NotBlank(message = "名字不能为空 blank")
     @Size(min = 2, max = 6, message = "名字size在2-6位")
     @Length(min = 2, max = 6, message = "名字length在2-6位")
     private String name;
 
+    @NotEmpty(message = "pass不能为空")
+    @NotBlank(message = "pass不能为空 blank")
     @Length(min = 3, max = 3, message = "pass 长度不为3")
     private String pass;
 
