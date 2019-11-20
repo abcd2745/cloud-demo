@@ -1,5 +1,6 @@
 package com.lc.cloud.demo.config.web;
 
+import com.lc.cloud.demo.controller.advice.ControllerInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.format.FormatterRegistry;
@@ -71,7 +72,8 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer {
 //        registry.addInterceptor(permissionInterceptorAdapter()).addPathPatterns("/**").excludePathPatterns("/upload/**", "/static/**");
 //        //web拦截器
 //        registry.addInterceptor(webInterceptor()).addPathPatterns("/**").excludePathPatterns("/upload/**", "/static/**");
-
+        //测试拦截器如何生效
+        registry.addInterceptor(new ControllerInterceptor());
         registry.addInterceptor(new LoginRequiredInterceptor()).excludePathPatterns(Arrays.asList("/static/**", "/templates/**"));
     }
 

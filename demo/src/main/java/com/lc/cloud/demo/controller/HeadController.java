@@ -11,7 +11,7 @@ import java.util.Map;
 public class HeadController {
 
     /**
-     * http2.0  head大小写不敏感，必须指定head中field为小写
+     * http2.0  head规定都是小写字母，必须指定head中field为小写
      *
      * @param head
      * @param id
