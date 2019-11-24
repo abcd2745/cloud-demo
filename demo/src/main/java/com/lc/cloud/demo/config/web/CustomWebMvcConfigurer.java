@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.util.UrlPathHelper;
 
 import java.util.Arrays;
 import java.util.List;
@@ -92,6 +93,19 @@ public class CustomWebMvcConfigurer implements WebMvcConfigurer {
                 .allowCredentials(true)
                 .maxAge(3600)
                 .allowedHeaders("*");//允许任何头
+    }
+
+    /**
+     * Matrix Variables意味矩阵变量
+     * 要使用矩阵变量，首先需要将RequestMappingHandlerMapping类中的removeSemicolonContent属性设为false，默认情况下为true。
+     *
+     * @param configurer
+     */
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        UrlPathHelper urlPathHelper = new UrlPathHelper();
+        urlPathHelper.setRemoveSemicolonContent(false);
+        configurer.setUrlPathHelper(urlPathHelper);
     }
 
     @Override
