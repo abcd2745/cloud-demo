@@ -60,14 +60,14 @@ public class InterceptorAddHeaderTest {
                 .readTimeout(60, TimeUnit.SECONDS)
                 //写超时
                 .writeTimeout(60, TimeUnit.SECONDS)
-                .addInterceptor(new LogInterceptor())
-                .addNetworkInterceptor(new LogInterceptor())
+//                .addInterceptor(new LogInterceptor())
+//                .addNetworkInterceptor(new LogInterceptor())
                 .build();
 
         Request request = new Request.Builder()
                 .url(url)
                 .post(RequestBody.create(json, JSON))
-                // .addHeader("storeId", "11002054") //正常这里就可以新增header信息
+                 .addHeader("storeid", "11002054") //正常这里就可以新增header信息
                 .build();
         Response response = client.newCall(request).execute();
         Assert.assertThat(200, is(response.code()));

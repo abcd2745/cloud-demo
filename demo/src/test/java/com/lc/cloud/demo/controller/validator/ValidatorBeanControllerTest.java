@@ -73,16 +73,13 @@ public class ValidatorBeanControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(reqDto)))
                 .andExpect(status().isOk())
-                .andDo(new ResultHandler() {
-                    @Override
-                    public void handle(MvcResult mvcResult) throws Exception {
-                        BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<ValidatorRspDto>>() {
-                                }
-                        );
-                        Assert.assertThat("1", is(rspDto.getCode()));
-                        Assert.assertThat(2, is(rspDto.getData().getValid()));
-                    }
+                .andDo(mvcResult -> {
+                    BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                            new TypeReference<BaseRspDto<ValidatorRspDto>>() {
+                            }
+                    );
+                    Assert.assertThat("1", is(rspDto.getCode()));
+                    Assert.assertThat(2, is(rspDto.getData().getValid()));
                 })
                 .andDo(print());
     }
@@ -112,15 +109,12 @@ public class ValidatorBeanControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(reqDto)))
                 .andExpect(status().isOk())
-                .andDo(new ResultHandler() {
-                    @Override
-                    public void handle(MvcResult mvcResult) throws Exception {
-                        BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<ValidatorRspDto>>() {
-                                }
-                        );
-                        Assert.assertThat("-1", is(rspDto.getCode()));
-                    }
+                .andDo(mvcResult -> {
+                    BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                            new TypeReference<BaseRspDto<ValidatorRspDto>>() {
+                            }
+                    );
+                    Assert.assertThat("-1", is(rspDto.getCode()));
                 })
                 .andDo(print());
     }
@@ -150,18 +144,14 @@ public class ValidatorBeanControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(reqDto)))
                 .andExpect(status().isOk())
-                .andDo(new ResultHandler() {
-
-                    @Override
-                    public void handle(MvcResult mvcResult) throws Exception {
-                        BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
-                                new TypeReference<BaseRspDto<ValidatorRspDto>>() {
-                                }
-                        );
-                        Assert.assertThat("1", is(rspDto.getCode()));
-                        ValidatorRspDto validator = rspDto.getData();
-                        Assert.assertThat(validator.getName(),containsString("pattern"));
-                    }
+                .andDo(mvcResult -> {
+                    BaseRspDto<ValidatorRspDto> rspDto = objectMapper.readValue(mvcResult.getResponse().getContentAsString(),
+                            new TypeReference<BaseRspDto<ValidatorRspDto>>() {
+                            }
+                    );
+                    Assert.assertThat("1", is(rspDto.getCode()));
+                    ValidatorRspDto validator = rspDto.getData();
+                    Assert.assertThat(validator.getName(), containsString("pattern"));
                 })
                 .andDo(print());
     }
