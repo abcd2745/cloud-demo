@@ -1,11 +1,9 @@
 package com.lc.cloud.jackson;
 
-import java.awt.Robot;
 import java.io.IOException;
 import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
