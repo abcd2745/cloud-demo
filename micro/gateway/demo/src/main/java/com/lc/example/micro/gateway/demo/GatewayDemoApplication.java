@@ -6,6 +6,10 @@ import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 
+/**
+ * webflux与mvc不兼容，如类路径中引用了webmvc会导致项目启动不起来
+ * https://blog.csdn.net/yichen0429/article/details/98203775
+ */
 @SpringBootApplication
 public class GatewayDemoApplication {
 
