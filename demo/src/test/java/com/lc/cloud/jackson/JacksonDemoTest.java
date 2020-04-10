@@ -21,6 +21,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+import org.springframework.test.util.JsonPathExpectationsHelper;
 
 import java.io.IOException;
 
@@ -28,6 +29,12 @@ import java.io.IOException;
 public class JacksonDemoTest {
 
     private static ObjectMapper objectMapper;
+
+    @Test
+    public void jsonPathTest() throws ParseException {
+        JsonPathExpectationsHelper json = new JsonPathExpectationsHelper("$.message");
+        json.assertValue("{\"message\":true}",false);
+    }
 
     @BeforeClass
     public static void setUpClass() throws IOException {

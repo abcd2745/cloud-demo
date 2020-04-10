@@ -175,6 +175,8 @@ public class MyBase64Util {
         Assert.assertTrue(Integer.valueOf('\r').equals(13));
         //退格键
         Assert.assertTrue(Integer.valueOf('\b').equals(8));
+
+        System.out.println((int)'a');
     }
 
     /**

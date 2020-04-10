@@ -18,7 +18,6 @@ import java.util.List;
 @RestControllerAdvice
 public class ExceptionController {
 
-    @ResponseBody
     @ExceptionHandler(value = CustomException.class)
     public BaseRspDto CustomExceptionHandler(CustomException ex) {
         BaseRspDto baseRspDto = new BaseRspDto();
@@ -33,7 +32,6 @@ public class ExceptionController {
      * @param ex
      * @return
      */
-    @ResponseBody
     @ExceptionHandler(value = ConstraintViolationException.class)
     public BaseRspDto CustomExceptionHandler(ConstraintViolationException ex) {
         BaseRspDto baseRspDto = new BaseRspDto();
@@ -48,7 +46,6 @@ public class ExceptionController {
      * @param ex
      * @return
      */
-    @ResponseBody
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public BaseRspDto CustomExceptionHandler(MethodArgumentNotValidException ex) {
         BaseRspDto baseRspDto = new BaseRspDto();

@@ -46,6 +46,8 @@ public class GroupValidatorController {
 
     /**
      * 这是指定要生效的验证分组
+     * Validated注解表示使用Spring的校验机制,支持分组校验,声明在入参上.
+     * Valid注解表示使用Hibernate的校验机制,不支持分组校验,声明在入参上.
      *
      * @param dto
      * @return 验证失败的属性和原因
