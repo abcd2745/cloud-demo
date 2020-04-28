@@ -2,14 +2,41 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/DemoDbUnit/DemoDbUnit.iml" filepath="$PROJECT_DIR$/Spring-JUnit/DemoDbUnit/DemoDbUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/cloud-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/dbunit-tomee-appcomposer-sample/dbunit-tomee-appcomposer-sample.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/dbunit-tomee-appcomposer-sample/dbunit-tomee-appcomposer-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/micro/gateway/gateway.iml" filepath="$PROJECT_DIR$/micro/gateway/gateway.iml" />
-      <module fileurl="file://$PROJECT_DIR$/micro/hustrix/hustrix.iml" filepath="$PROJECT_DIR$/micro/hustrix/hustrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/jOOQ-DBUnit-flyway-example/jooq-dbunit-flyway-example.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/jOOQ-DBUnit-flyway-example/jooq-dbunit-flyway-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka/microservice-discovery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/microservice-simple-provider-user.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/microservice-simple-provider-user.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2/microservice-simple-provider-user-2.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2/microservice-simple-provider-user-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-cdi/rider-cdi.iml" filepath="$PROJECT_DIR$/../database-rider/rider-cdi/rider-cdi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-core/rider-core.iml" filepath="$PROJECT_DIR$/../database-rider/rider-core/rider-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-cucumber/rider-cucumber.iml" filepath="$PROJECT_DIR$/../database-rider/rider-cucumber/rider-cucumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/rider-examples.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/rider-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-junit5/rider-junit5.iml" filepath="$PROJECT_DIR$/../database-rider/rider-junit5/rider-junit5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-parent.iml" filepath="$PROJECT_DIR$/../database-rider/rider-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/rider-quarkus-sample.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/rider-quarkus-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-spring/rider-spring.iml" filepath="$PROJECT_DIR$/../database-rider/rider-spring/rider-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/spring-test-dbunit-example-master/spring-dbunit-example.iml" filepath="$PROJECT_DIR$/Spring-JUnit/spring-test-dbunit-example-master/spring-dbunit-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/spring-h2/spring-h2.iml" filepath="$PROJECT_DIR$/Spring-JUnit/spring-h2/spring-h2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/spring3-junt4/spring3-junt4.iml" filepath="$PROJECT_DIR$/Spring-JUnit/spring3-junt4/spring3-junt4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/spring3-test-dbunit-mybatis-master/spring3-test-dbunit-mybatis.iml" filepath="$PROJECT_DIR$/Spring-JUnit/spring3-test-dbunit-mybatis-master/spring3-test-dbunit-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/spring-boot-dbunit-sample/springboot-dbunit-sample.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/spring-boot-dbunit-sample/springboot-dbunit-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/springboot-junit5/springboot-junit5.iml" filepath="$PROJECT_DIR$/Spring-JUnit/springboot-junit5/springboot-junit5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-JUnit/springboot-rider-demo/springboot-rider-demo.iml" filepath="$PROJECT_DIR$/Spring-JUnit/springboot-rider-demo/springboot-rider-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/structure/structure.iml" filepath="$PROJECT_DIR$/structure/structure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-admin/xxl-job-admin.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-admin/xxl-job-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-core/xxl-job-core.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-core/xxl-job-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/xxl-job-executor-sample-frameless.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jboot/xxl-job-executor-sample-jboot.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jboot/xxl-job-executor-sample-jboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jfinal/xxl-job-executor-sample-jfinal.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jfinal/xxl-job-executor-sample-jfinal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-nutz/xxl-job-executor-sample-nutz.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-nutz/xxl-job-executor-sample-nutz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-spring/xxl-job-executor-sample-spring.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-spring/xxl-job-executor-sample-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/xxl-job-executor-sample-springboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-samples.iml" filepath="$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-samples.iml" />
     </modules>
   </component>
 </project>

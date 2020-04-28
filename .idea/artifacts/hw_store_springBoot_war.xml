@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hw-store-springBoot:war">
+    <output-path>$PROJECT_DIR$/../../workspace02/hw-store-springBoot/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>hw-store-springBoot</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="hw-store-springBoot.war">
+      <element id="artifact" artifact-name="hw-store-springBoot:war exploded" />
+    </root>
+  </artifact>
+</component>

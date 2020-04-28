@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lc.mapper.order.PosSalPosMstMapper">
+
+    <!-- 通过门店编号与门店POS机器号查询当前最大的订单号 -->
+    <select id="selectMaxBillNo" resultType="java.lang.String" parameterType="java.lang.String">
+        SELECT
+            MAX(BillNo) AS MaxBillNo
+        FROM
+            hw_pos_salposmst
+        WHERE
+            StoreID = #{storeId,jdbcType=VARCHAR}
+        AND PosID =#{posId,jdbcType=VARCHAR} and date(BillDate) = date(now())
+    </select>
+
+    <select id="loadBillNo" resultType="string">
+        select billNo from hw_pos_salposmst where billNo = #{billNo,jdbcType=VARCHAR} and RecordState = 'Y'
+    </select>
+
+</mapper>

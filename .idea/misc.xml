@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spirng3-junit4/spring3-junt4" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring-JUnit/spring3-junt4" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring-JUnit/springboot-junit5" />
+    <file type="web" url="file://$PROJECT_DIR$/spring3-junt4/spring3-junt4" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-jfinal" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-nutz" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jfinal" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-nutz" />
+    <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/../../workspace02/hw-pos-pay" />
+    <file type="web" url="file://$PROJECT_DIR$/../../workspace02/hw-store-springBoot" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -11,9 +25,28 @@
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/pom.xml" />
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/pom.xml" />
         <option value="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2/pom.xml" />
-        <option value="$PROJECT_DIR$/micro/hustrix/pom.xml" />
+        <option value="$PROJECT_DIR$/cache/pom.xml" />
+        <option value="$PROJECT_DIR$/structure/pom.xml" />
+        <option value="$PROJECT_DIR$/spring3-junt4/spring3-junt4/pom.xml" />
+        <option value="$PROJECT_DIR$/spirng3-junit4/spring3-junt4/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/spring3-junt4/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/springboot-junit5/pom.xml" />
+        <option value="$PROJECT_DIR$/../database-rider/pom.xml" />
+        <option value="$PROJECT_DIR$/../pom.xml" />
+        <option value="$PROJECT_DIR$/../xxl-job/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/spring-h2/pom.xml" />
+        <option value="$PROJECT_DIR$/../database-rider/rider-examples/spring-boot-dbunit-sample/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/spring-test-dbunit-example-master/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/spring3-test-dbunit-mybatis-master/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/DemoDbUnit/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-JUnit/springboot-rider-demo/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../database-rider/rider-examples/jpa-productivity-boosters/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

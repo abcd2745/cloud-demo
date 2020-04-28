@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springboot-junit5:war">
+    <output-path>$PROJECT_DIR$/Spring-JUnit/springboot-junit5/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>springboot-junit5</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="springboot-junit5-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="springboot-junit5:war exploded" />
+    </root>
+  </artifact>
+</component>

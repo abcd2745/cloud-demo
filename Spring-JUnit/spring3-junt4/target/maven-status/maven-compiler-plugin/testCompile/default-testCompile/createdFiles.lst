@@ -1,0 +1,5 @@
+com\hotwind\pos\MockitoBeansTestExecutionListener.class
+com\hotwind\pos\service\order\impl\OrderServiceImplTest.class
+com\hotwind\pos\MockBeanWrapper.class
+com\hotwind\pos\MockitoBeansPostProcessor.class
+com\hotwind\pos\controller\OrderControllerTest.class
