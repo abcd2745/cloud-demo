@@ -27,9 +27,9 @@ public class GroupValidatorController {
      * @return
      */
     @PostMapping("groupValidator.json")
-    public BaseRspDto<Map<String, Integer>> groupValidator(@RequestBody @Validated({MyGroup.class})
-                                                                   GroupValidatorReqDto dto,
-                                                           BindingResult bindingResult) {
+    public BaseRspDto<Map<String, Integer>> groupValidator(
+            @RequestBody @Validated({MyGroup.class}) GroupValidatorReqDto dto,
+            BindingResult bindingResult) {
         BaseRspDto<Map<String, Integer>> rsp = BaseRspDto.success();
 
         Map<String, Integer> map = new HashMap<>();
@@ -53,9 +53,9 @@ public class GroupValidatorController {
      * @return 验证失败的属性和原因
      */
     @PostMapping("groupNoExtendsDefaultValidator.json")
-    public BaseRspDto<Map<String, Integer>> groupNoExtendsDefaultValidator(@RequestBody @Validated({MyGroupNoExtendsDefault.class})
-                                                                                   GroupNoExtendsDefaultValidatorReqDto dto,
-                                                                           BindingResult bindingResult) {
+    public BaseRspDto<Map<String, Integer>> groupNoExtendsDefaultValidator(
+            @RequestBody @Validated({MyGroupNoExtendsDefault.class}) GroupNoExtendsDefaultValidatorReqDto dto,
+            BindingResult bindingResult) {
         BaseRspDto<Map<String, Integer>> rsp = BaseRspDto.success();
 
         List<FieldError> fieldErrorList = bindingResult.getFieldErrors();
