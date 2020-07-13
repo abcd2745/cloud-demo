@@ -7,17 +7,29 @@
     <file url="file://$PROJECT_DIR$/Spring-JUnit/spring3-junt4/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-JUnit/springboot-junit5/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-JUnit/springboot-rider-demo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/log4j2/split-thread/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user-2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/gateway/demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/gateway/demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/alibaba-nacos-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/alibaba-nacos-config-db/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/alibaba-nacos-config-db/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-dubbo-consumer-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-dubbo-consumer-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-dubbo-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-dubbo-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-consumer-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-consumer-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-discovery-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-discovery-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis/springboot-redis-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/structure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web/web-demo-01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websocket/websocket-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-cdi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-cdi/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-core/src/main/java" charset="UTF-8" />
@@ -46,5 +58,10 @@
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-spring/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/SpringMVC-Mybatis-shiro-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/src/main/resources" charset="UTF-8" />
   </component>
 </project>

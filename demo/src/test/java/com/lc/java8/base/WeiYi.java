@@ -13,6 +13,14 @@ import org.junit.jupiter.api.Test;
  */
 public class WeiYi {
 
+    static {
+        System.out.println("11");
+    }
+
+    private WeiYi(){
+        System.out.println("初始化");
+    }
+
     @Test
     void testJavaUseBuMa() {
         //java byte 占4字节 ，32位

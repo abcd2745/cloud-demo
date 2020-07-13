@@ -5,12 +5,15 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring-JUnit/spring3-junt4" />
     <file type="web" url="file://$PROJECT_DIR$/Spring-JUnit/springboot-junit5" />
     <file type="web" url="file://$PROJECT_DIR$/spring3-junt4/spring3-junt4" />
+    <file type="web" url="file://$PROJECT_DIR$/websocket/websocket-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/websocket/websocket-demo/websocket-demo" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-jfinal" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-nutz" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job-executor-samples/xxl-job-executor-sample-spring" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-jfinal" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-nutz" />
     <file type="web" url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/../../workspace01/SpringMVC-Mybatis-shiro-master" />
     <file type="web" url="file://$PROJECT_DIR$/../../workspace02/hw-pos-pay" />
     <file type="web" url="file://$PROJECT_DIR$/../../workspace02/hw-store-springBoot" />
   </component>
@@ -40,12 +43,22 @@
         <option value="$PROJECT_DIR$/Spring-JUnit/spring3-test-dbunit-mybatis-master/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-JUnit/DemoDbUnit/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-JUnit/springboot-rider-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/log4j2/split-thread/pom.xml" />
+        <option value="$PROJECT_DIR$/../../workspace01/mysql-binlog-watcher-master/pom.xml" />
+        <option value="$PROJECT_DIR$/../../workspace01/SpringMVC-Mybatis-shiro-master/pom.xml" />
+        <option value="$PROJECT_DIR$/web/web-demo-01/pom.xml" />
+        <option value="$PROJECT_DIR$/redis/springboot-redis-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/alibaba-nacos-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/alibaba-nacos-config-db/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/nacos-dubbo-consumer-example/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/nacos-dubbo-example/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-consumer-example/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-discovery-example/pom.xml" />
+        <option value="$PROJECT_DIR$/micro/gateway/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/websocket/websocket-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/pom.xml" />
+        <option value="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/pom.xml" />
       </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/../database-rider/rider-examples/jpa-productivity-boosters/pom.xml" />
-      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

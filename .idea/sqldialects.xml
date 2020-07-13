@@ -2,5 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Spring-JUnit/spring3-test-dbunit-mybatis-master/sql/ddl.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/../xxl-job/doc/db/tables_xxl_job.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../workspace01/mysql-binlog-watcher-master/mysql-binlog-demo/src/main/java/net/giafei/tools/demo/sql/test.sql" dialect="GenericSQL" />
   </component>
 </project>
