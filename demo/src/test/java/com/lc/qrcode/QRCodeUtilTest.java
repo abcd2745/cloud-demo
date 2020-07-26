@@ -20,7 +20,7 @@ public class QRCodeUtilTest {
 
 	@Test
 	public void generateAliQRImage() throws Exception {
-		String txt = "https://openauth.alipaydev.com/oauth2/publicAppAuthorize.htm?app_id=2021001168619860&scope=auth_base&redirect_uri=http%3a%2f%2fc2927v1271.zicp.vip%2fgetAliUserId%3fparam%3d1";
+		String txt = "https://openauth.alipaydev.com/oauth2/publicAppAuthorize.htm?app_id=2021001167681733&scope=auth_base&redirect_uri=http%3a%2f%2fc2927v1271.zicp.vip%2fgetAliUserId%3fparam%3d1";
 
 		String path = Paths.get(ZxingUtil01.class.getResource("/static/images").toURI()).toAbsolutePath().toString();
 		QRCodeUtil.generateQRImage(txt,path+"/hotwind.jpg",path,"qrcode-ali.jpg","jpg");

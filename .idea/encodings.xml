@@ -39,10 +39,16 @@
     <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/jOOQ-DBUnit-flyway-example/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/rider-micronaut/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/rider-micronaut/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/spring-boot-dbunit-sample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-examples/spring-boot-dbunit-sample/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-junit5/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../database-rider/rider-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-admin/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-core/src/main/java" charset="UTF-8" />
@@ -59,9 +65,5 @@
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../../workspace01/SpringMVC-Mybatis-shiro-master/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/src/main/resources" charset="UTF-8" />
   </component>
 </project>

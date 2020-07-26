@@ -3,6 +3,8 @@ package com.lc.java8.ip;
 import com.lc.cloud.demo.util.OkHttpUtil;
 import org.junit.Test;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -30,5 +32,12 @@ public class IpTest {
             String isp = m2.group(1);
             System.out.println(isp);
         }
+    }
+
+    @Test
+    public void testGetLocalhostIp() throws UnknownHostException {
+        InetAddress inetAddress = InetAddress.getLocalHost();
+
+        System.out.println(inetAddress);
     }
 }

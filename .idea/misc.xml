@@ -56,8 +56,7 @@
         <option value="$PROJECT_DIR$/micro/nacos/nacos-spring-cloud-discovery-example/pom.xml" />
         <option value="$PROJECT_DIR$/micro/gateway/demo/pom.xml" />
         <option value="$PROJECT_DIR$/websocket/websocket-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/pom.xml" />
-        <option value="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/pom.xml" />
+        <option value="$PROJECT_DIR$/../dubbo-admin/pom.xml" />
       </list>
     </option>
   </component>

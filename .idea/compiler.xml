@@ -9,51 +9,85 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xxl-job-core" />
-        <module name="xxl-job-executor-sample-jfinal" />
-        <module name="DemoDbUnit" />
-        <module name="spring-dbunit-example" />
-        <module name="springboot-dbunit-sample" />
-        <module name="websocket-demo" />
-        <module name="demo" />
-        <module name="shiro.demo" />
-        <module name="mysql-binlog-starter" />
-        <module name="rider-core" />
+        <module name="springboot-rider-demo" />
         <module name="microservice-simple-provider-user" />
-        <module name="xxl-job-executor-sample-jboot" />
-        <module name="messaging-stomp-websocket (1)" />
-        <module name="springboot-redis-demo" />
-        <module name="jooq-dbunit-flyway-example" />
-        <module name="split-thread" />
-        <module name="nacos-spring-cloud-discovery-example" />
-        <module name="alibaba-nacos-config-db" />
-        <module name="xxl-job-admin" />
-        <module name="xxl-job-executor-sample-springboot" />
-        <module name="nacos-spring-cloud-consumer-example" />
-        <module name="dbunit-tomee-appcomposer-sample" />
+        <module name="demo" />
+        <module name="spring3-junt4" />
         <module name="rider-cucumber" />
-        <module name="microservice-simple-provider-user-2" />
         <module name="rider-junit5" />
         <module name="mysql-binlog-demo" />
-        <module name="xxl-job-executor-sample-frameless" />
-        <module name="spring3-test-dbunit-mybatis" />
+        <module name="websocket-demo" />
+        <module name="spring-dbunit-example" />
+        <module name="xxl-job-executor-sample-jboot" />
+        <module name="DemoDbUnit" />
         <module name="nacos-dubbo-example" />
-        <module name="nacos-dubbo-consumer-example" />
-        <module name="xxl-job-executor-sample-nutz" />
-        <module name="rider-cdi" />
-        <module name="structure" />
-        <module name="springboot-rider-demo" />
-        <module name="alibaba-nacos-config-client" />
-        <module name="rider-spring" />
-        <module name="xxl-job-executor-sample-spring" />
-        <module name="messaging-stomp-websocket" />
-        <module name="microservice-discovery-eureka" />
-        <module name="spring-h2" />
-        <module name="gateway-demo" />
-        <module name="web-demo-01" />
-        <module name="rider-quarkus-sample" />
-        <module name="spring3-junt4" />
-        <module name="microservice-simple-consumer-movie" />
         <module name="springboot-junit5" />
+        <module name="rider-spring" />
+        <module name="dubbo-admin-ui" />
+        <module name="xxl-job-executor-sample-jfinal" />
+        <module name="mysql-binlog-starter" />
+        <module name="microservice-discovery-eureka" />
+        <module name="microservice-simple-provider-user-2" />
+        <module name="springboot-redis-demo" />
+        <module name="dubbo-admin-test" />
+        <module name="shiro.demo" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-nutz" />
+        <module name="alibaba-nacos-config-db" />
+        <module name="xxl-job-executor-sample-spring" />
+        <module name="rider-quarkus-sample" />
+        <module name="nacos-dubbo-consumer-example" />
+        <module name="jpa-productivity-boosters" />
+        <module name="gateway-demo" />
+        <module name="spring-h2" />
+        <module name="nacos-spring-cloud-discovery-example" />
+        <module name="jooq-dbunit-flyway-example" />
+        <module name="springboot-dbunit-sample" />
+        <module name="dubbo-admin-distribution" />
+        <module name="nacos-spring-cloud-consumer-example" />
+        <module name="split-thread" />
+        <module name="dbunit-tomee-appcomposer-sample" />
+        <module name="dubbo-admin-server" />
+        <module name="xxl-job-executor-sample-frameless" />
+        <module name="microservice-simple-consumer-movie" />
+        <module name="rider-core" />
+        <module name="web-demo-01" />
+        <module name="rider-cdi" />
+        <module name="spring3-test-dbunit-mybatis" />
+        <module name="alibaba-nacos-config-client" />
+        <module name="xxl-job-executor-sample-springboot" />
+        <module name="structure" />
+      </profile>
+      <profile name="Annotation profile for database-rider" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-inject-java/1.3.6/micronaut-inject-java-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.26/slf4j-api-1.7.26.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-inject/1.3.6/micronaut-inject-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-core/1.3.6/micronaut-core-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-aop/1.3.6/micronaut-aop-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/data/micronaut-data-processor/1.1.0/micronaut-data-processor-1.1.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/data/micronaut-data-model/1.1.0/micronaut-data-model-1.1.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/data/micronaut-data-tx/1.1.0/micronaut-data-tx-1.1.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/github/spotbugs/spotbugs-annotations/4.0.4/spotbugs-annotations-4.0.4.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-validation/1.3.6/micronaut-validation-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-http/1.3.6/micronaut-http-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/reactivex/rxjava2/rxjava/2.2.19/rxjava-2.2.19.jar" />
+          <entry name="$MAVEN_REPOSITORY$/io/micronaut/micronaut-graal/1.3.6/micronaut-graal-1.3.6.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.10.1/jackson-databind-2.10.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.10.1/jackson-annotations-2.10.1.jar" />
+          <entry name="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.10.1/jackson-core-2.10.1.jar" />
+        </processorPath>
+        <module name="rider-micronaut" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
@@ -62,8 +96,14 @@
       <module name="dbunit-tomee-appcomposer-sample" target="1.8" />
       <module name="demo" target="1.8" />
       <module name="DemoDbUnit" target="1.5" />
+      <module name="dubbo-admin" target="1.8" />
+      <module name="dubbo-admin-distribution" target="1.8" />
+      <module name="dubbo-admin-server" target="1.8" />
+      <module name="dubbo-admin-test" target="1.8" />
+      <module name="dubbo-admin-ui" target="1.8" />
       <module name="gateway-demo" target="1.8" />
       <module name="jooq-dbunit-flyway-example" target="1.8" />
+      <module name="jpa-productivity-boosters" target="1.7" />
       <module name="messaging-stomp-websocket" target="1.8" />
       <module name="messaging-stomp-websocket (1)" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.8" />
@@ -82,9 +122,10 @@
       <module name="rider-cucumber" target="1.7" />
       <module name="rider-examples" target="1.7" />
       <module name="rider-junit5" target="1.8" />
+      <module name="rider-micronaut" target="1.8" />
       <module name="rider-parent" target="1.7" />
       <module name="rider-quarkus-sample" target="1.8" />
-      <module name="rider-spring" target="1.8" />
+      <module name="rider-spring" target="1.7" />
       <module name="shiro.demo" target="1.7" />
       <module name="split-thread" target="1.8" />
       <module name="spring-dbunit-example" target="1.5" />
@@ -126,6 +167,7 @@
       <module name="nacos-dubbo-example" options="-parameters" />
       <module name="nacos-spring-cloud-consumer-example" options="-parameters" />
       <module name="nacos-spring-cloud-discovery-example" options="-parameters" />
+      <module name="rider-micronaut" options="-parameters" />
       <module name="split-thread" options="-parameters" />
       <module name="springboot-junit5" options="-parameters" />
       <module name="springboot-redis-demo" options="-parameters" />

@@ -8,11 +8,14 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud-demo.iml" filepath="$PROJECT_DIR$/.idea/cloud-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/dbunit-tomee-appcomposer-sample/dbunit-tomee-appcomposer-sample.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/dbunit-tomee-appcomposer-sample/dbunit-tomee-appcomposer-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin.iml" filepath="$PROJECT_DIR$/../dubbo-admin/dubbo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-distribution/dubbo-admin-distribution.iml" filepath="$PROJECT_DIR$/../dubbo-admin/dubbo-admin-distribution/dubbo-admin-distribution.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-server/dubbo-admin-server.iml" filepath="$PROJECT_DIR$/../dubbo-admin/dubbo-admin-server/dubbo-admin-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-test/dubbo-admin-test.iml" filepath="$PROJECT_DIR$/../dubbo-admin/dubbo-admin-test/dubbo-admin-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../dubbo-admin/dubbo-admin-ui/dubbo-admin-ui.iml" filepath="$PROJECT_DIR$/../dubbo-admin/dubbo-admin-ui/dubbo-admin-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/gateway/demo/gateway-demo.iml" filepath="$PROJECT_DIR$/micro/gateway/demo/gateway-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../groovy-demo/groovy-demo.iml" filepath="$PROJECT_DIR$/../groovy-demo/groovy-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/jOOQ-DBUnit-flyway-example/jooq-dbunit-flyway-example.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/jOOQ-DBUnit-flyway-example/jooq-dbunit-flyway-example.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/messaging-stomp-websocket.iml" filepath="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/complete/messaging-stomp-websocket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/messaging-stomp-websocket (1).iml" filepath="$PROJECT_DIR$/../../workspace01/gs-messaging-stomp-websocket-master/initial/messaging-stomp-websocket (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/jpa-productivity-boosters/jpa-productivity-boosters.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/jpa-productivity-boosters/jpa-productivity-boosters.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-discovery-eureka/microservice-discovery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-simple-consumer-movie/microservice-simple-consumer-movie.iml" />
       <module fileurl="file://$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/microservice-simple-provider-user.iml" filepath="$PROJECT_DIR$/micro/eureka/microservice-simple-provider-user/microservice-simple-provider-user.iml" />
@@ -30,6 +33,7 @@
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-cucumber/rider-cucumber.iml" filepath="$PROJECT_DIR$/../database-rider/rider-cucumber/rider-cucumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/rider-examples.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/rider-examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-junit5/rider-junit5.iml" filepath="$PROJECT_DIR$/../database-rider/rider-junit5/rider-junit5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/rider-micronaut/rider-micronaut.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/rider-micronaut/rider-micronaut.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-parent.iml" filepath="$PROJECT_DIR$/../database-rider/rider-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/rider-quarkus-sample.iml" filepath="$PROJECT_DIR$/../database-rider/rider-examples/quarkus-dbunit-sample/rider-quarkus-sample.iml" />
       <module fileurl="file://$PROJECT_DIR$/../database-rider/rider-spring/rider-spring.iml" filepath="$PROJECT_DIR$/../database-rider/rider-spring/rider-spring.iml" />
